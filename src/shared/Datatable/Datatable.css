@@ -1,0 +1,82 @@
+.datatable-container {
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  text-align: left; /* Align text to the right */
+}
+
+.search-input {
+  width: 200px; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  float: right; /* Float the input to the right */
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-spacing: 0;
+  table-layout: fixed;
+  overflow-x: auto; /* Fix table layout to prevent content from stretching table */
+}
+
+.table-header {
+  background-color: var(--primary-color);
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: left;
+  white-space: nowrap; /* Prevent text wrapping in header cells */
+}
+
+.table-cell {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text wrapping in table cells */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis;
+  padding: 15px; /* Display ellipsis (...) for overflowing content */
+}
+
+.actions-buttons {
+  text-align: left; /* Align buttons to the left */
+  padding: 0;
+  border-bottom: 1px solid #ddd; /* Add border-bottom */ /* Remove any padding */
+}
+
+.action-button {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.action-button:hover {
+  background-color: var(--accent-color);
+}
+
+.table-row-even {
+  background-color: var(--bg-color);
+}
+
+.table-row-odd {
+  background-color: #ffffff;
+}
+
+/* Media query for screens 600px or less */
+@media screen and (max-width: 600px) {
+  .datatable-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  .custom-table {
+    width: 650px;
+  }
+}

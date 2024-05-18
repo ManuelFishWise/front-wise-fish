@@ -1,0 +1,12 @@
+.icon-expand {
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.appbar-logo {
+    width: calc(var(--appbar-height) - 10px);
+    height: calc(var(--appbar-height) - 10px);
+    filter: brightness(0) invert(1) grayscale(1);
+}

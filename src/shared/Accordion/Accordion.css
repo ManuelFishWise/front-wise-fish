@@ -1,0 +1,35 @@
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 15px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background-color: var(--secondary-color);
+  color: #fff
+}
+
+.accordion-title {
+  font-weight: bold;
+  flex: 1;
+}
+
+.accordion-toggle {
+  flex-shrink: 0;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #fff;
+}

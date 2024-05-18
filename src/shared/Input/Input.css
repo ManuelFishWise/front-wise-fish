@@ -1,0 +1,66 @@
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-container {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon {
+  color: #999;
+}
+
+.input-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  position: relative;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px 10px 10px 40px; /* Adjust left padding to accommodate the icon */
+  border: 1px solid var(--border-color-input);
+  border-radius: 20px;
+  font-size: 16px;
+  width: 300px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.input-container:focus-within .icon-container .icon {
+  color: var(--secondary-color);
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust to position the eye icon on the right side */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle svg {
+  font-size: var(--icon-size-input);
+}
+
+.password-toggle, .search-button {
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  cursor: pointer;
+}
+
+.icon-container svg {
+  font-size: var(--icon-size-input);
+}

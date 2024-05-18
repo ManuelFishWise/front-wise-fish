@@ -1,0 +1,15 @@
+.auth-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-logo-image {
+    width: 250px;
+    height: 250px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
